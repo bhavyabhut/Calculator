@@ -29,13 +29,14 @@ body{
 	font-weight: lighter;
 	 padding-right: 10px;
 	color: grey;
+	font-size: 2rem;
 }
 .result{
 	height: 70px;
 	text-align: right;
 	padding-top: 1.5rem;
 	padding-right: 10px;
-	font-size: 2rem;
+	font-size: 3rem;
 	font-weight: bold;
 }
 .calculator-area{
