@@ -1,6 +1,7 @@
 
 $(function(){
 	var flag = 0;
+	var equalflag = 0;
 	function getResult(){
 		return $('.result').text();
 	}
@@ -21,7 +22,7 @@ $(function(){
 	}
 	 $('.number').click( async function(){
 	 	$('.result').removeClass('mst');
-		var id =$(this).attr('id');
+	 	var id =$(this).attr('id');
 		var history = getHistory();
 		if(history!='')
 			setHistory(history+id);
@@ -34,11 +35,16 @@ $(function(){
 	$('.operator').click(function(){
 		$('.result').removeClass('mst');
 		flag=1;
+		if(equalflag==1){
+	 		equalflag=0;
+	 		setHistory(eval(getResult()));
+	 	}
 		var result = getResult();
 		var history =getHistory();
 		console.log(getResult(),getHistory());
 		var id = $(this).attr('id')
 		if(id==='='){
+			equalflag=1;
 			$('.result').toggleClass('mst');
 			setHistory('');
 			setResult(eval(history));
