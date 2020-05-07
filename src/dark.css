@@ -127,3 +127,17 @@ button:nth-child(20){
 		width: 38px;
 	}
 }
+@media(max-width: 600px){
+	.calculator{
+		width: 70vw;
+		height: 73vh;
+	}
+	button{
+		height: 33px;
+		width: 33px;
+	}
+	.color{
+		height: 80%;
+		width: 80%;
+	}
+}
