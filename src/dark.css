@@ -119,8 +119,8 @@ button:nth-child(20){
 
 @media(max-width: 960px){
 	.calculator{
-		width: 75vw;
-		height: 78vh;
+		width: 70%;
+		height: 70%;
 	}
 	button{
 		height: 38px;
@@ -129,8 +129,8 @@ button:nth-child(20){
 }
 @media(max-width: 600px){
 	.calculator{
-		width: 70vw;
-		height: 73vh;
+		width: 75vw;
+		height: 75vh;
 	}
 	button{
 		height: 33px;
@@ -139,5 +139,6 @@ button:nth-child(20){
 	.color{
 		height: 80%;
 		width: 80%;
+		font-size: 16px;
 	}
 }
